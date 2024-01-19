@@ -4,7 +4,7 @@ double absolute(double number)
 {
   if (number <= -1)
     number = -number;
-  return -number;
+  return number;
 }
 
 double power(double number, int exponent)
