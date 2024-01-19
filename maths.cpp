@@ -10,7 +10,7 @@ double absolute(double number)
 double power(double number, int exponent)
 {
   double result = number;
-  for (int i = 0; i < exponent; ++i)
+  for (int i = 1; i < exponent; ++i)
     result *= number;
   return result;
 }
