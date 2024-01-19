@@ -17,7 +17,7 @@ double power(double number, int exponent)
 
 bool is_prime(int number)
 {
-  for (int i = 2; i <= number; ++i)
+  for (int i = 2; i < number; i++)
     if (number % i == 0)
       return false;
   return true;
