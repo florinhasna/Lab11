@@ -25,3 +25,15 @@ TEST_CASE("test powers", "[power]")
   REQUIRE(power(5, 3) == 125);
   REQUIRE(power(10, 2) == 100);
 }
+
+TEST_CASE("test absolute", "[absolute]")
+{
+  REQUIRE(absolute(5) == 5);
+  REQUIRE(absolute(-5) == 5);
+  REQUIRE(absolute(20.0) == 20.0);
+  REQUIRE(absolute(-20.0) == 20.0);
+  REQUIRE(absolute(3) == 3);
+  REQUIRE(absolute(-3.3) == 3.3);
+  REQUIRE(absolute(10) == 10);
+  REQUIRE(absolute(-10) == 10);
+}
